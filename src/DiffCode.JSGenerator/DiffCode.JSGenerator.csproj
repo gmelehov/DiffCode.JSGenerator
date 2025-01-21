@@ -3,7 +3,28 @@
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DiffCode.CommonExtensions" Version="1.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="DiffCode.CommonExtensions" />
+    <Using Include="DiffCode.JSGenerator.Extensions" />
+    <Using Include="DiffCode.CommonExtensions.Interfaces" />
+    <Using Include="System.Text" />
+    <Using Include="System.Xml.Linq" />
+    <Using Include="DiffCode.JSGenerator.Enums.TokenType" Alias="TT"/>
+    <Using Include="DiffCode.JSGenerator.AbstractExpression" Alias="AE"/>
+    <Using Include="DiffCode.JSGenerator.AbstractToken" Alias="AT"/>
+    <Using Include="DiffCode.JSGenerator.KeyValue" Alias="KVal"/>
+    <Using Include="DiffCode.JSGenerator.Common.TokenBinding" Alias="TB"/>
+    <Using Include="DiffCode.JSGenerator.SimpleToken" Alias="ST"/>
+    <Using Include="DiffCode.JSGenerator.AbstractOperator" Alias="AOp"/>
+    <Using Include="DiffCode.JSGenerator.Helper" Static="true"/>
+    <Using Include="DiffCode.JSGenerator.Generator" Static="true"/>
+  </ItemGroup>
+  
 
 </Project>
